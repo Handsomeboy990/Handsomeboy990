@@ -69,7 +69,7 @@ I’m **fast-learning, pressure-resistant, and solution-oriented**, with a stron
 
 ## 🤝 Let’s Work Together
 
-📧 Email: *lauret.chacha@epitech?eu*  
+📧 Email: *lauret.chacha@epitech.eu*  
 💼 LinkedIn: *www.linkedin.com/in/lauret-kryst-sasler-chacha-a877161aa*  
 🌐 Portfolio: *lauret-chacha.vercel.app*
 
