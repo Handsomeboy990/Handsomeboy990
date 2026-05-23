@@ -123,7 +123,6 @@ Currently studying at **Epitech** and open to **remote opportunities** in startu
   </tr>
 </table>
 
-> Pinned repositories below contain real-world implementations.
 
 
 ---
