@@ -125,18 +125,6 @@ Currently studying at **Epitech** and open to **remote opportunities** in startu
 
 > Pinned repositories below contain real-world implementations.
 
----
-
-## GitHub Activity
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Handsomeboy990&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=tokyonight" alt="GitHub Stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Handsomeboy990&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top Languages" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Handsomeboy990&hide_border=true&theme=tokyonight" alt="GitHub Streak" />
-
-</div>
 
 ---
 
