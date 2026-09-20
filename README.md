@@ -26,7 +26,9 @@
 
 I build production web platforms end to end: data model, API, authorization, payments, background jobs, and the interface on top.
 
-Over the past year I shipped more than 2,400 contributions across public and private repositories, including over 1,000 commits on a single booking and payments product taken from an empty repository to a tested, bilingual application with Stripe Connect, a three sided role model and an admin back office.
+Over 4,200 commits across 37 repositories, public and private. More than a thousand of them went into one product: a booking and payments platform taken from an empty repository to a tested, bilingual application with Stripe Connect, a three sided role model, an admin back office and scheduled jobs.
+
+The rest covers the range: a Laravel and Vue community platform, a NestJS and PostgreSQL billing system for health centres, a B2B ticketing SaaS with five distinct roles, an accessibility agent measured on real user outcomes, and a developer tooling suite of 152 skills. Two of them were built and delivered inside fixed hackathon windows.
 
 Available for remote roles and freelance work.
 
