@@ -35,8 +35,8 @@ name: Metrics
 on:
   workflow_dispatch:
   # Uncomment once METRICS_TOKEN exists. Every day at 04:00 UTC.
-  # schedule:
-  #   - cron: "0 4 * * *"
+  schedule:
+  - cron: "0 4 * * *"
 
 permissions:
   contents: write
