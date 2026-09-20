@@ -1,0 +1,69 @@
+# Generates a metrics SVG and commits it into this repository, so the profile
+# README never depends on a public rendering service that can return 503 or
+# exhaust its quota.
+#
+# SETUP, in this order:
+#
+#   1. Create a fine grained or classic personal access token with the `repo`
+#      scope. The `repo` scope is what lets the action count contributions made
+#      in private repositories. Nothing less will.
+#      https://github.com/settings/tokens
+#
+#   2. Add it to this repository as a secret named METRICS_TOKEN.
+#      https://github.com/Handsomeboy990/Handsomeboy990/settings/secrets/actions
+#
+#   3. Allow Actions to write to the repository:
+#      Settings > Actions > General > Workflow permissions > Read and write.
+#
+#   4. Run it once by hand: Actions > Metrics > Run workflow.
+#
+#   5. Once metrics.svg exists in the repository, replace the GitHub Activity
+#      section of README.md with:
+#
+#        <div align="center">
+#        <img src="./metrics.svg" alt="GitHub metrics" />
+#        </div>
+#
+#   6. Uncomment the `schedule` block below so it refreshes on its own.
+#
+# Until step 2 is done this workflow can only be started manually, and it will
+# fail without the secret. That is deliberate: no scheduled run means no red
+# cross on the repository while the token is still missing.
+
+name: Metrics
+
+on:
+  workflow_dispatch:
+  # Uncomment once METRICS_TOKEN exists. Every day at 04:00 UTC.
+  # schedule:
+  #   - cron: "0 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Handsomeboy990
+          filename: metrics.svg
+          template: classic
+          base: header, activity, repositories
+          config_timezone: Africa/Porto-Novo
+          committer_message: "Update metrics"
+
+          # Contribution calendar over the full year, private work included.
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Language breakdown weighted by what was actually written.
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+
+          # Lines added and removed, across private repositories too.
+          plugin_lines: yes
