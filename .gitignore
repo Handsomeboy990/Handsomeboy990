@@ -1,0 +1,20 @@
+# Local agent skills, installed from github.com/Handsomeboy990/craft-suite.
+# Machine local, not part of the published profile. To reinstall, from a clone
+# of craft-suite:
+#   CLAUDE_SKILLS_DIR=/path/to/this/repo/.claude/skills \
+#     bash install.sh --dev --documents --no-agents
+.claude/
+
+# Secrets. This repository is public: nothing below ever belongs in it.
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Editor and OS local files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
