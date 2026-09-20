@@ -77,5 +77,10 @@ jobs:
             calculator, GESTION_ECOLE, portfolio,
             gestion-traitements-patients-hopital, Gestion-centre-de-sante
 
-          # Lines added and removed, across private repositories too.
-          plugin_lines: yes
+          # plugin_lines is deliberately absent. It reads the contributor stats
+          # API, which answers 202 while GitHub computes and does not keep up
+          # across this many repositories. It reported "0 added, 0 removed" on
+          # the run that succeeded, then errored on the next one, and the
+          # classic template dereferences its result without a guard, so one
+          # failing plugin takes the whole render down with it. Nothing of value
+          # is lost.
