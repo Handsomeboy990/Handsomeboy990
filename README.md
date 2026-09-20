@@ -160,12 +160,7 @@ Every section of the public site stored in the database and editable from a secu
 
 <div align="center">
 
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Handsomeboy990&theme=tokyonight" alt="Profile summary" />
-
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Handsomeboy990&theme=tokyonight" alt="Commit and contribution stats" />
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Handsomeboy990&theme=tokyonight" alt="Repositories per language" />
-
-<img src="https://streak-stats.demolab.com/?user=Handsomeboy990&hide_border=true&theme=tokyonight" alt="Contribution streak" />
+<img src="./metrics.svg" alt="Commits, contribution calendar and language breakdown, private repositories included" />
 
 </div>
 
